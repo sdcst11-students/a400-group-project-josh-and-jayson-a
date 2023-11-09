@@ -1,7 +1,7 @@
 #!python3
 # Volume Calculator
 # Feel free to rename your variables
-
+    
 
 def title():
     # Will display a title screen
@@ -20,14 +20,49 @@ def instructions():
     # Modified:
     return None
 
-
-
+import math
 def main():
-    """
-    main block of code that will run your program and control program flow
-    You will need to include a while loop to keep repeating the commands until
-    the user chooses to exit
-    """
+    calc = True
+    while True:
+        num = float(input(""))
+        math1 = (input(""))
+        num2 = float(input(""))
+       
+
+        if math1 == "+":
+            x = num + num2
+        if math1 == "x":
+            x = num * num2
+        if math1 == "**":
+            x = num **num2
+        if math1 == "-":
+            x = num - num2
+        if math1 == "/":
+            x = num / num2
+       
+        print(f"={x}")
+        if num == "quit":
+            num = str(num)
+            False
+        if math1 == "quit":
+            False
+        if num2 == "quit":
+            num2 = str(num2)
+            False
+            return
+        
+        
+            
+            
+            
+            
+
+        
+        
+            
+
+
+
     title()
     while True:
         # keep giving options to choose menu options until they choose to exit
