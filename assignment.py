@@ -20,26 +20,39 @@ def instructions():
     # Modified:
     return None
 
+#for interest rates multiply any number by 0.0042 and then by the time period you want
+
+
 import math
 def main():
     calc = True
+    num = float(input(""))
     while True:
-        num = float(input(""))
         math1 = (input(""))
         num2 = float(input(""))
-       
+        
 
         if math1 == "+":
             x = num + num2
+            num = x
         if math1 == "x":
             x = num * num2
+            num = x
         if math1 == "**":
             x = num **num2
+            num = x
         if math1 == "-":
             x = num - num2
+            num = x
         if math1 == "/":
             x = num / num2
-       
+            num = x
+        
+
+
+
+
+
         print(f"={x}")
         if num == "quit":
             num = str(num)
@@ -52,7 +65,8 @@ def main():
             return
         
         
-            
+        
+        
             
             
             
