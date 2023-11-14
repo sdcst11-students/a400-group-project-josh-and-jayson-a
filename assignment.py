@@ -4,12 +4,9 @@
     
 
 def title():
-    # Will display a title screen
-    # input parameters: none needed
-    # output parameters: None
-    # Author: Copper
-    # Modified:
-    # title
+    print("============")
+    print("=CAlCULATOR=")
+    print("============")
     return None
 
 def instructions():
@@ -23,33 +20,34 @@ def instructions():
 import math
 def main():
     calc = True
+    num = float(input(""))
     while True:
-        num = float(input(""))
         math1 = (input(""))
         num2 = float(input(""))
-       
-
+        
+    
         if math1 == "+":
             x = num + num2
+            num = x
         if math1 == "x":
             x = num * num2
+            num = x
         if math1 == "**":
             x = num **num2
+            num = x
         if math1 == "-":
             x = num - num2
+            num = x
         if math1 == "/":
             x = num / num2
-       
-        print(f"={x}")
-        if num == "quit":
-            num = str(num)
-            False
-        if math1 == "quit":
-            False
-        if num2 == "quit":
-            num2 = str(num2)
-            False
-            return
+            num = x
+        print(f"= {x}")
+        
+
+
+
+        
+           
         
         
             
@@ -63,7 +61,7 @@ def main():
 
 
 
-    title()
+        title()
     while True:
         # keep giving options to choose menu options until they choose to exit
         pass
