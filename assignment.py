@@ -10,61 +10,47 @@ def title():
     return None
 
 def instructions():
-    # Will display instructions
-    # input parameters: none needed
-    # output parameters: None
-    # Author:
-    # Modified:
-    return None
+    help = input('Type "instructions" "help" or "skip": ')
+    if help == "instructions" or "instruction":
+        print("Start by entering a number followed by +,-,/,x,**, then enter your second number.\nThe calculator will print the answer.\nYou may continue off your answer or type 'quit'.")
+    if help == "help":
+        print("+ = addition\n- = subtraction\nx = multiplication\n/ = division\n** = exponent")
+    if help == "skip":
 
-import math
-def main():
-    calc = True
-    num = float(input(""))
-    while True:
-        math1 = (input(""))
-        num2 = float(input(""))
+        return None
+
+
+
+    
+      
+            
+            
+
+title()
+instructions()
+num = float(input(""))
+while True:
+    math1 = (input(""))
+    num2 = float(input(""))
         
     
-        if math1 == "+":
-            x = num + num2
-            num = x
-        if math1 == "x":
-            x = num * num2
-            num = x
-        if math1 == "**":
-            x = num **num2
-            num = x
-        if math1 == "-":
-            x = num - num2
-            num = x
-        if math1 == "/":
-            x = num / num2
-            num = x
-        print(f"= {x}")
-        
+    if math1 == "+":
+        x = num + num2
+        num = x
+    if math1 == "x":
+        x = num * num2
+        num = x
+    if math1 == "**":
+        x = num **num2
+        num = x
+    if math1 == "-":
+        x = num - num2
+        num = x
+    if math1 == "/":
+        x = num / num2
+        num = x
+    print(f"= {x}")
+    
+    
 
-
-
-        
-           
-        
-        
-            
-            
-            
-            
-
-        
-        
-            
-
-
-
-        title()
-    while True:
-        # keep giving options to choose menu options until they choose to exit
-        pass
-
-if __name__ == "__main__":
-    main()
+    
