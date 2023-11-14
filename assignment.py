@@ -20,10 +20,7 @@ def instructions():
         return None
 
 
-
-    
-      
-            
+        
             
 
 title()
@@ -32,7 +29,8 @@ num = float(input(""))
 while True:
     math1 = (input(""))
     num2 = float(input(""))
-        
+    
+    
     
     if math1 == "+":
         x = num + num2
@@ -50,6 +48,8 @@ while True:
         x = num / num2
         num = x
     print(f"= {x}")
+
+    
     
     
 
