@@ -9,12 +9,14 @@ def title():
     print("============")
     return None
 
+
 def help():
     print("_________________________\n========\n= HELP =\n========\n+ = addition\n- = subtraction\nx = multiplication\n/ = division\n** = exponent\n_________________________\n")
-<<<<<<< HEAD
+
 
 def instructions():
     print("__________________________________________________\n================\n= INSTRUCTIONS =\n================\nStart by entering a number followed by +,-,/,x,**, then enter your second number.\nThe calculator will print the answer.\nYou may continue off your answer or close the program.\n__________________________________________________\n")
+
 
 def number(s):
     try:
@@ -23,19 +25,25 @@ def number(s):
     except ValueError:
         return False
 
+
 title()
 instructions()
 
+
 num = float(input("Enter a number: "))
+
 
 while True:
     math1 = input("Enter an operation (+, -, x, /, **): ")
+
 
     if number(math1):
         print("Invalid input. Please enter a valid operation.")
         continue
 
+
     num2 = float(input("Enter the next number: "))
+
 
     if math1 == "+":
         x = num + num2
@@ -50,6 +58,7 @@ while True:
     else:
         print("Invalid operation. Please enter a valid operation.")
         continue
+
 
     print(f"= {x}")
     num = x
@@ -74,7 +83,6 @@ while True:
 
 
 
-=======
 
 def instruct():
     print("__________________________________________________\n================\n= INSTRUCTIONS =\n================\nStart by entering a number followed by +,-,/,x,**, then enter your second number.\nThe calculator will print the answer.\nYou may continue off your answer or type 'quit'.\n__________________________________________________\n")
@@ -131,4 +139,3 @@ while True:
     
 
     
->>>>>>> 86ba8d131eb50d85aa8f7d150f07c1e8b8e7e2f4
